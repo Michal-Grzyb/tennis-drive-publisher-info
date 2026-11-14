@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://michal-grzyb.github.io/tennis-drive-publisher-info/privacy.html">
+  <meta name="description" content="Polityka prywatności Tennis Drive Publisher: dostęp do Google Drive, przechowywanie, udostępnianie i cofnięcie zgody.">
+  <title>Prywatność — Tennis Drive Publisher</title>
+  <style>
+    :root{color-scheme:light;--ink:#182638;--muted:#46566b;--link:#124b83;--line:#d7e1eb;--paper:#fff;--bg:#f3f6f8}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}main,header,footer{max-width:54rem;margin:auto;padding:1.5rem}header{padding-bottom:0}nav{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;border-bottom:1px solid var(--line);padding-bottom:1rem}a{color:var(--link);text-underline-offset:.2em}a:focus-visible{outline:3px solid #d47b12;outline-offset:4px}h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin:.5rem 0 1rem}h2{font-size:1.35rem;line-height:1.3;margin:1.8rem 0 .65rem}p,ul,ol{margin:.65rem 0 1rem}.eyebrow{color:var(--muted);font-size:.9rem}.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:1.3rem;margin:1.3rem 0}.notice{border-left:5px solid var(--link)}code{font-size:.88em;overflow-wrap:anywhere}footer{font-size:.9rem;color:var(--muted);border-top:1px solid var(--line)}.skip{position:absolute;left:-10000px}.skip:focus{left:1rem;top:1rem;background:white;padding:.5rem}li{margin:.4rem 0}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Przejdź do treści</a>
+  <header><nav aria-label="Nawigacja główna"><a href="index.html">Aplikacja</a><a href="privacy.html" aria-current="page">Prywatność</a><a href="terms.html">Informacje o używaniu</a></nav></header>
+  <main id="main">
+    <p class="eyebrow">Tennis Drive Publisher · aktualizacja: 14 listopada 2026</p>
+    <h1>Polityka prywatności</h1>
+    <p>Ten opis dotyczy prywatnego publishera Sports Odds Tracker, uruchamianego dla właściciela konta i jego danych tenisowych. Operatorem projektu jest właściciel konta GitHub <a href="https://github.com/Michal-Grzyb" rel="noopener noreferrer">Michal-Grzyb</a>; publiczny profil służy kontaktowi w sprawie aplikacji i obsługi danych.</p>
+
+    <section class="card notice" aria-labelledby="access">
+      <h2 id="access">1. Zakres zgody a faktyczne operacje</h2>
+      <p>Zakres OAuth <code>https://www.googleapis.com/auth/drive</code> daje techniczną możliwość odczytu, pobierania, tworzenia, modyfikacji i usuwania wszystkich plików Google Drive. <a href="https://developers.google.com/workspace/drive/api/guides/api-specific-auth" rel="noopener noreferrer">Dokumentacja Google opisuje ten szeroki zakres</a>.</p>
+      <p>Publisher wykorzystuje go do obsługi wskazanego folderu <strong>Tennis ChatGPT</strong> i własnych podfolderów. Ograniczenie folderu wynika z kodu i konfiguracji rclone, nie z granicy samej zgody Google. Nie jest to usługa do przeszukiwania całego dysku, poczty, kontaktów ani kalendarza.</p>
+      <p>Szeroki zakres służy pracy z istniejącym folderem i jego plikami przez rclone: listowaniu, publikowaniu, kontrolnemu pobieraniu i porządkowaniu własnych zweryfikowanych wersji.</p>
+    </section>
+
+    <h2>2. Jakie informacje są przetwarzane</h2>
+    <ul>
+      <li>Treść wybranych plików sportowych: mecze, uczestnicy, terminarze, kursy, wyniki, profile sportowe, eksporty, prognozy, metadane modeli i dowody jakości.</li>
+      <li>Metadane folderu i plików Drive, m.in. nazwa, identyfikator, rozmiar, czas modyfikacji oraz suma kontrolna — do sprawdzenia transferu i odnalezienia publikacji.</li>
+      <li>Tokeny OAuth oraz konfiguracja klienta używane przez rclone do autoryzowanych operacji. Aplikacja nie otrzymuje hasła do konta Google.</li>
+      <li>Techniczne potwierdzenia i logi operacji, takie jak czas, etap, rozmiar i wynik weryfikacji. Nie są przeznaczone do zapisywania tokenów ani haseł.</li>
+    </ul>
+    <p>Nie ma potrzeby dodawania do folderu dokumentów osobistych, poczty ani innych danych niezwiązanych z publikacją tenisową.</p>
+
+    <h2>3. Cel, przechowywanie i bezpieczeństwo</h2>
+    <p>Dane służą publikacji, archiwizacji, kontroli integralności i późniejszemu odczytowi danych sportowych przez właściciela. Pliki wynikowe są przechowywane na jego Google Drive; dane robocze, rejestr prognoz i potrzebne kopie pozostają na prywatnym serwerze VPS. Kontrola integralności może wymagać pobrania całego przesłanego archiwum.</p>
+    <p>Poświadczenia rclone są przechowywane w chronionej konfiguracji publishera; podczas konfiguracji wykorzystywana jest również chroniona kopia lokalna. Nie są umieszczane na tej publicznej stronie, w paczkach danych ani publicznym repozytorium. Ten opis nie stanowi zapewnienia, że ryzyko dostępu lub utraty danych zostało całkowicie wyeliminowane.</p>
+    <p>Zdalne archiwa na Drive i wspólne niezmienne dowody są zachowywane do decyzji właściciela o ich usunięciu. Publisher może usuwać starsze własne wersje czytelne z przestrzeni publikacji dopiero po sprawdzeniu archiwum. Nie usuwa przy tym zdalnych archiwów ani wspólnych dowodów. Lokalne zweryfikowane kopie transportowe i archiwa mogą być sprzątane po potwierdzeniu zdalnej kopii. Tymczasowe pliki transferowe i własny staging również mogą być sprzątane; limit miejsca może zatrzymać kolejne operacje.</p>
+    <p>Strona informacyjna nie zawiera formularzy ani własnych narzędzi analitycznych. Po jej publikacji dostawca hostingu może przetwarzać dane techniczne połączeń według własnych zasad. Ta strona nie odbiera danych z Drive ani tokenów.</p>
+
+    <h2 id="chatgpt">4. Udostępnianie i osobna analiza w ChatGPT</h2>
+    <p>Google przetwarza przesyłane pliki w ramach usługi Drive. Serwer VPS przetwarza je na potrzeby działania publishera. Publikowanie plików nie zmienia samo w sobie ich uprawnień na publiczne i nie publikuje danych sportowych na tej stronie internetowej.</p>
+    <p>Właściciel może wyraźnie wybrać pliki sportowe i polecić ich analizę w ChatGPT przez oddzielnie połączony Google Drive. Wymaga to osobnego uprawnienia dla tego połączenia oraz stosowania jego zasad i ustawień przetwarzania danych. Zgoda OAuth publishera nie jest zgodą dla ChatGPT. Publisher sam nie wysyła zapytań do API OpenAI, nie udostępnia ChatGPT tokenów rclone i nie uruchamia automatycznie analizy w czacie.</p>
+    <p>Publisher nie sprzedaje danych, nie używa ich do reklamy ani oceny zdolności kredytowej. Nie trenuje modeli i nie przekazuje danych konta Google do tworzenia, trenowania lub ulepszania ogólnych modeli AI. Osobna analiza wskazana przez właściciela nie jest deklaracją, że dane nigdy nie są analizowane z użyciem AI.</p>
+
+    <h2>5. Google API Services User Data Policy i Limited Use</h2>
+    <p>Wykorzystanie i przekazywanie informacji otrzymanych przez Google API w Tennis Drive Publisher podlega <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener noreferrer">Google API Services User Data Policy</a>, w tym wymaganiom <strong>Limited Use</strong>. Informacje te służą opisanym tu funkcjom użytkownika. Ich przekazanie do innej usługi wymaga odpowiedniej zgody i dozwolonego celu; nie są sprzedawane ani udostępniane reklamodawcom.</p>
+    <p>Operator nie upoważnia innych osób do czytania prywatnych plików poza wyraźnie zleconą obsługą lub analizą, działaniami bezpieczeństwa albo obowiązkiem wynikającym z prawa. Ta polityka jest opisem zasad aplikacji, a nie certyfikatem zgodności ani potwierdzeniem weryfikacji Google.</p>
+
+    <h2>6. Cofnięcie dostępu i usunięcie danych</h2>
+    <p>Dostęp można cofnąć w <a href="https://myaccount.google.com/connections" rel="noopener noreferrer">ustawieniach połączeń konta Google</a>, wybierając Tennis Drive Publisher i usunięcie dostępu. Google opisuje tę czynność w <a href="https://support.google.com/accounts/answer/13533235?hl=pl" rel="noopener noreferrer">pomocy dotyczącej połączonych aplikacji</a>.</p>
+    <p>Cofnięcie zgody odbiera publisherowi możliwość kolejnych autoryzowanych operacji na koncie. Nie usuwa automatycznie plików wcześniej przesłanych na Drive, kopii roboczych na VPS ani dostępu przyznanego osobno ChatGPT. Pliki Drive usuwa właściciel; usunięcie poświadczeń i pozostałych kopii serwera wymaga obsługi przez operatora. W sprawie danych lub zakończenia używania aplikacji skontaktuj się przez <a href="https://github.com/Michal-Grzyb" rel="noopener noreferrer">publiczny profil projektu</a>, bez zamieszczania tokenów ani prywatnych plików.</p>
+
+    <h2>7. Zmiany</h2>
+    <p>Zmiana celu lub zakresu dostępu wymaga aktualizacji tego opisu i, gdy dotyczy nowego wykorzystania danych lub uprawnień, ponownej świadomej zgody przed takim wykorzystaniem.</p>
+  </main>
+  <footer><p><a href="index.html">Aplikacja</a> · <a href="terms.html">Informacje o używaniu</a></p></footer>
+</body>
+</html>
+
