@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="canonical" href="https://michal-grzyb.github.io/tennis-drive-publisher-info/index.html">
-  <meta name="description" content="Tennis Drive Publisher � informacje o prywatnym narz�dziu do publikowania danych tenisowych na Google Drive.">
+  <meta name="description" content="Tennis Drive Publisher — informacje o prywatnym narzędziu do publikowania danych tenisowych na Google Drive.">
   <title>Tennis Drive Publisher</title>
   <style>
     :root{color-scheme:light;--ink:#182638;--muted:#46566b;--link:#124b83;--line:#d7e1eb;--paper:#fff;--bg:#f3f6f8}
@@ -12,47 +12,47 @@
   </style>
 </head>
 <body>
-  <a class="skip" href="#main">Przejd� do tre�ci</a>
+  <a class="skip" href="#main">Przejdź do treści</a>
   <header>
-    <nav aria-label="Nawigacja g��wna">
+    <nav aria-label="Nawigacja główna">
       <a href="index.html" aria-current="page">Aplikacja</a>
-      <a href="privacy.html">Prywatno��</a>
-      <a href="terms.html">Informacje o u�ywaniu</a>
+      <a href="privacy.html">Prywatność</a>
+      <a href="terms.html">Informacje o używaniu</a>
     </nav>
   </header>
   <main id="main">
-    <p class="eyebrow">Prywatne narz�dzie do u�ytku osobistego</p>
+    <p class="eyebrow">Prywatne narzędzie do użytku osobistego</p>
     <h1>Tennis Drive Publisher</h1>
-    <p>Narz�dzie projektu Sports Odds Tracker do przesy�ania wybranych danych tenisowych z prywatnego serwera na Google Drive w�a�ciciela. Korzysta z rclone i Google Drive API. Nie jest publiczn� us�ug� przyjmuj�c� rejestracje.</p>
+    <p>Narzędzie projektu Sports Odds Tracker do przesyłania wybranych danych tenisowych z prywatnego serwera na Google Drive właściciela. Korzysta z rclone i Google Drive API. Nie jest publiczną usługą przyjmującą rejestracje.</p>
 
     <section class="card" aria-labelledby="purpose">
       <h2 id="purpose">Co robi aplikacja</h2>
       <ul>
-        <li>Publikuje mecze, kursy, wyniki, profile sportowe, eksporty, prognozy oraz dowody ich pochodzenia i jako�ci.</li>
-        <li>Przechowuje archiwa i wsp�dzielone pliki dowodowe oraz sprawdza przes�ane dane za pomoc� sum kontrolnych.</li>
-        <li>Aktualizuje plik wskazuj�cy najnowsz� zweryfikowan� publikacj�. Starsze w�asne wersje czytelne mo�e usuwa� dopiero po sprawdzeniu archiwum.</li>
+        <li>Publikuje mecze, kursy, wyniki, profile sportowe, eksporty, prognozy oraz dowody ich pochodzenia i jakości.</li>
+        <li>Przechowuje archiwa i współdzielone pliki dowodowe oraz sprawdza przesłane dane za pomocą sum kontrolnych.</li>
+        <li>Aktualizuje plik wskazujący najnowszą zweryfikowaną publikację. Starsze własne wersje czytelne może usuwać dopiero po sprawdzeniu archiwum.</li>
       </ul>
-      <p>Dane sportowe powstaj� w Sports Odds Tracker. Publisher odpowiada za ich transfer i archiwizacj�; sam nie trenuje modeli ani nie sk�ada zak�ad�w.</p>
+      <p>Dane sportowe powstają w Sports Odds Tracker. Publisher odpowiada za ich transfer i archiwizację; sam nie trenuje modeli ani nie składa zakładów.</p>
     </section>
 
     <section class="card notice" aria-labelledby="scope">
-      <h2 id="scope">Ograniczony dost�p: drive.file i nowy folder</h2>
-      <p>Ta konfiguracja rclone korzysta z zakresu <code>https://www.googleapis.com/auth/drive.file</code>. Obejmuje on pliki utworzone przez t� aplikacj� oraz pliki �wiadomie wybrane lub udost�pnione jej przez obs�ugiwany mechanizm Google. Nie daje og�lnego dost�pu do ca�ego Drive.</p>
-      <p>Publisher tworzy w�asny folder <strong>Tennis ChatGPT - Publisher</strong> i ogranicza w kodzie oraz konfiguracji operacje do tego folderu i w�asnych podfolder�w publikacji. Sam zakres OAuth dotyczy plik�w dost�pnych aplikacji, a nie jednej nazwy folderu.</p>
-      <p>Nowa publikacja otrzymuje w�asny punkt wej�cia w nowym folderze. Dotychczasowy folder, jego archiwa i poprzedni punkt wej�cia pozostaj� bez zmian; nowa zgoda nie udost�pnia ich automatycznie publisherowi.</p>
-      <p>Przed udzieleniem zgody przeczytaj <a href="privacy.html">opis dost�pu, przechowywania i usuwania danych</a>. Zgod� mo�na p�niej cofn�� w ustawieniach konta Google.</p>
+      <h2 id="scope">Ograniczony dostęp: drive.file i nowy folder</h2>
+      <p>Ta konfiguracja rclone korzysta z zakresu <code>https://www.googleapis.com/auth/drive.file</code>. Obejmuje on pliki utworzone przez tę aplikację oraz pliki świadomie wybrane lub udostępnione jej przez obsługiwany mechanizm Google. Nie daje ogólnego dostępu do całego Drive.</p>
+      <p>Publisher tworzy własny folder <strong>Tennis ChatGPT - Publisher</strong> i ogranicza w kodzie oraz konfiguracji operacje do tego folderu i własnych podfolderów publikacji. Sam zakres OAuth dotyczy plików dostępnych aplikacji, a nie jednej nazwy folderu.</p>
+      <p>Nowa publikacja otrzymuje własny punkt wejścia w nowym folderze. Dotychczasowy folder, jego archiwa i poprzedni punkt wejścia pozostają bez zmian; nowa zgoda nie udostępnia ich automatycznie publisherowi.</p>
+      <p>Przed udzieleniem zgody przeczytaj <a href="privacy.html">opis dostępu, przechowywania i usuwania danych</a>. Zgodę można później cofnąć w ustawieniach konta Google.</p>
     </section>
 
     <h2>Odczyt w ChatGPT</h2>
-    <p>W�a�ciciel mo�e osobno poleci� ChatGPT analiz� wybranych plik�w przez w�asne po��czenie z Google Drive. Taki dost�p wymaga odr�bnego uprawnienia i �wiadomego wyboru danych. Zgoda dla publishera sama nie udziela ChatGPT dost�pu do konta ani nie uruchamia analizy.</p>
-    <p>Publisher nie sprzedaje danych, nie s�u�y reklamom i nie przekazuje informacji z konta Google do trenowania og�lnych modeli AI. Nie oznacza to, �e u�ytkownik nigdy nie korzysta z AI � osobn� analiz� w ChatGPT opisuje <a href="privacy.html#chatgpt">polityka prywatno�ci</a>.</p>
+    <p>Właściciel może osobno polecić ChatGPT analizę wybranych plików przez własne połączenie z Google Drive. Taki dostęp wymaga odrębnego uprawnienia i świadomego wyboru danych. Zgoda dla publishera sama nie udziela ChatGPT dostępu do konta ani nie uruchamia analizy.</p>
+    <p>Publisher nie sprzedaje danych, nie służy reklamom i nie przekazuje informacji z konta Google do trenowania ogólnych modeli AI. Nie oznacza to, że użytkownik nigdy nie korzysta z AI — osobną analizę w ChatGPT opisuje <a href="privacy.html#chatgpt">polityka prywatności</a>.</p>
 
-    <h2>Obs�uga i kontakt</h2>
-    <p>Projekt osobisty utrzymywany przez konto GitHub <a href="https://github.com/Michal-Grzyb" rel="noopener noreferrer">Michal-Grzyb</a>. To publiczny profil kontaktowy; nie publikuj w nim token�w ani prywatnych plik�w.</p>
-    <p>Ta statyczna strona wy��cznie opisuje aplikacj�. Nie zawiera logowania, formularzy, reklam ani w�asnych skrypt�w analitycznych. Autoryzacja odbywa si� na stronie Google. Po�wiadczenia s� przechowywane w chronionej konfiguracji publishera, poza t� publiczn� stron�.</p>
+    <h2>Obsługa i kontakt</h2>
+    <p>Projekt osobisty utrzymywany przez konto GitHub <a href="https://github.com/Michal-Grzyb" rel="noopener noreferrer">Michal-Grzyb</a>. To publiczny profil kontaktowy; nie publikuj w nim tokenów ani prywatnych plików.</p>
+    <p>Ta statyczna strona wyłącznie opisuje aplikację. Nie zawiera logowania, formularzy, reklam ani własnych skryptów analitycznych. Autoryzacja odbywa się na stronie Google. Poświadczenia są przechowywane w chronionej konfiguracji publishera, poza tą publiczną stroną.</p>
   </main>
   <footer>
-    <p>Aktualizacja: 14 listopada 2026. <a href="privacy.html">Polityka prywatno�ci</a> � <a href="terms.html">Informacje o u�ywaniu</a></p>
+    <p>Aktualizacja: 14 listopada 2026. <a href="privacy.html">Polityka prywatności</a> · <a href="terms.html">Informacje o używaniu</a></p>
     <p>Tennis Drive Publisher nie jest produktem Google ani OpenAI. Ta strona nie potwierdza weryfikacji aplikacji przez Google.</p>
   </footer>
 </body>
